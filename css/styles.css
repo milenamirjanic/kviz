@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700&family=Raleway:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background-color: #0066cc;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1,h2,h3 {
+    font-family: 'Maven Pro', sans-serif;
+    color:#1a8cff;
+    text-align: center;
+}
+
+h1{
+    letter-spacing: 10px;
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 2.5em;
+}
+
+h2 {
+    margin-top: 60px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#wrapper { 
+    background-color: #fff;
+    height: 70vh;
+    width: 60vw;
+    padding: 5vh 5vw;
+    border-radius: 20px;
+    position: relative;
+}
+
+#title{
+}
+
+#reset {
+    position: absolute;
+    top:20px;
+    right: 15px;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+}
+
+button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #4da6ff;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    font-weight: 500;
+}
+
+#startGame {
+    font-size: 24px;
+    padding: 20px;
+    width: 250px;
+}
+
+button:hover {
+    background-color: #1a8cff;
+}
+
+button:active {
+    background-color: #0066cc;
+}
+
+#startGame span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+#startGame span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+    vertical-align:middle
+}
+  
+#startGame:hover span {
+    padding-right: 25px;
+}
+  
+#startGame:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+#game {
+    height: max-content;
+}
+
+.pitanja {
+    height: max-content;
+    width: max-content;
+}
+
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    margin: 20px;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+  
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#dalje {
+    margin: 20px;
+}
+
+#dalje:disabled {
+    background-color: rgba(26, 141, 255, 0.3);
+}
+
+.poeni , #poruka{
+    color: #0066cc;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Maven Pro', sans-serif;
+    line-height: 30px;
+    padding:20px;
+}
+
+#poeni {
+    font-size: 1.7em;
+}
