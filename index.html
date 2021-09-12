@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<meta charset="utf-8">
+	<title>Kviz</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="title">
+            <h1 id="naslov"> KVIZ </h1>
+            <h2 id="pitanje"  class="hidden"></h2>
+            <button id="reset" class="hidden"> RESET </button>
+        </div><!-- #title -->
+
+        <div id="start" class="box">
+            <button id="startGame"><span>POČNI IGRU </span>  </button>
+        </div><!-- #start .box -->
+
+        <div id="game" class="box  hidden">
+            <div class="pitanja">
+                <div  id="pitanja" ></div>
+                <button id="dalje"> DALJE </button>    
+            </div><!-- .pitanja -->
+        </div><!-- #game .box -->
+
+        <p class="poeni"> Poeni: <span id="poeni"> 0 </span></p>
+        
+        <div id="end" class="box hidden">
+            <p id="poruka">E N D !</p>
+        </div><!-- #start .box -->
+
+
+    </div><!-- #wrapper -->
+<script src="js/scripts.js"></script>
+</body>
+</html>
+            
